@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>The Last Piece Standing - BTÜ Projesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop>
+        <source src="https://actions.google.com/sounds/v1/ambient/dark_sci_fi_drone.ogg" type="audio/ogg">
+    </audio>
+
+    <div class="ui-container">
+        <div id="abilities">
+            <h3>ABILITIES</h3>
+            <div id="knight-card" class="card active">KNIGHT <span>♞</span></div>
+            <div id="bishop-card" class="card">BISHOP <span>♝</span></div>
+            <div id="rook-card" class="card">ROOK <span>♜</span></div>
+        </div>
+
+        <div class="canvas-wrapper">
+            <div id="level-display">LEVEL 1</div>
+            <canvas id="gameCanvas" width="500" height="600"></canvas>
+            <div id="overlay">
+                <button onclick="startGame()">START / UNMUTE</button>
+            </div>
+        </div>
+
+        <div id="status">
+            <h3>LOGS</h3>
+            <div id="message">Defeat the enemies!</div>
+            <p>Score: <span id="score">0</span></p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
